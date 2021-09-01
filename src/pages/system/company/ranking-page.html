@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobY</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="glider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <link rel="stylesheet" href="../../../assets/css/global/global.css">
+  <link rel="stylesheet" href="../../../assets/css/global/reset.css">
+  <link rel="stylesheet" href="../../../assets/css/global/iconMenu.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/system/system-page.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/system/home-institute.css">
+  <link rel="stylesheet" href="../../../assets/css/global/modal.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/system/company.css">
+  <link rel="stylesheet" href="../../../assets/glide-3.4.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="../../../assets/glide-3.4.1/dist/css/glide.theme.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+
+      <div class="box-logo">
+        <img src="../../../assets/img/Logo - Fundo Escuro.png" alt="">
+      </div>
+
+      <ul class="box-item-menu">
+        <li><a href="../company/index.html" class="paragraph">Home</a></li>
+        <li><a href="../company/ranking-page.html" class="paragraph item-menu-active">Ranking</a></li>
+        <li><a href="../company/course-page.html" class="paragraph">Cursos</a></li>
+        <li><a href="../company/help-page.html" class="paragraph">Ajuda</a></li>
+      </ul>
+
+      <div class="box-profile">
+        <span class="material-icons-round icon-profile-menu">
+          notifications
+        </span>
+
+        <div class="pseudo"></div>
+
+        <span class="material-icons-round icon-profile-menu">
+          settings
+        </span>
+
+        <div class="pseudo"></div>
+
+        <div class="profile-menu perfil-img">
+        </div>
+
+        <span class="material-icons-outlined icon-profile-menu" id="openSubMenu">
+          expand_more
+          <div class="subMenuProfile">
+            <ul>
+              <li><a href="../system/saved-places-page.html" class="paragraph"><span class="material-icons iconSub">favorite_border</span> Vagas favoritas</a></li>
+              <div class="pseudo"></div>
+              <li><a href="../system/course-page.html" class="paragraph"><span class="material-icons iconSub">school</span> Cursos favoritos</a></li>
+              <div class="pseudo"></div>
+              <li><a href="" class="paragraph"><span class="material-icons iconSub">logout</span> Logout</a></li>
+            </ul>
+          </div>
+        </span>
+      </div>
+
+      <!-- <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div> -->
+
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="box-home">
+      <div class="box-title">
+        <h3 class="title-home">Veja o <span class="span-title">Ranking </span>de alunos que deram like nas vagas</h3>
+        <p class="paragraph">Em nossa plataforma as empresas poderam cadastrar vagas ou divulgar seus cursos.</p>
+      </div>
+
+      <div class="box-atach">
+        <div class="box-info-user">
+          <div class="offices">
+            <h3 class="title-navigate">Vagas que <span class="span-title sub-t">Você</span> cadastrou</h3>
+            <div class="card-office" id="card-office">
+              <h3>Vagas</h3>
+              <p class="paragraph" id="load-jobs">Carregando...</p>
+            </div>
+          </div>
+
+          <div class="pseudo-vertical"></div>
+
+          <div class="users">
+            <h3 class="title-navigate">Alunos que deram like</h3>
+            <p class="paragraph" id="init-job">Selecione uma vaga</p>
+
+            <div class="cards-student-like" id="cards-student-like">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="box-footer">
+        <p class="paragraph">© 2021 Joby</p>
+        <p class="paragraph">Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </section>
+</body>
+
+<script src="../../../assets/js/openSubMenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+<script src="../../../env.js"></script>
+<script src="../../../assets/js/actionsButtons.js"></script>
+
+<script src="../../../http/getInfos/company/getJobsByCompany.js"></script>
+<script src="../../../http/getInfos/company/getStudentsByJobs.js"></script>
+
+<script src="../../../http/getInfos/company/onLoadRanking.js"></script>
+
+<script src="../../../http/getInfos/company/concatInfos/concatJobsInfos.js"></script>
+<script src="../../../http/getInfos/company/concatInfos/concatStudentsInfos.js"></script>
+
+<script src="../../../http/getInfos/company/privateFunctions.js"></script>
+
+<script src="../../../http/getInfos/company/postMatch.js"></script>
+
+<script>
+  const config = {
+    type: 'carousel',
+    startAt: 0,
+    perView: 4
+  }
+  new Glide('.glide', config).mount()
+</script>
+
+<script src="../../../assets/js/inputActive.js"></script>
+
+<script>
+  function iniciaModal(modalID) {
+    const modal = document.querySelector(modalID);
+    console.log(modalID);
+    console.log(modal)
+    if (modal) {
+      modal.classList.add('mostrar');
+      modal.addEventListener('click', (e) => {
+        if (e.target.id === modalID || e.target.className === 'close' || e.target.className === 'cancel') {
+          modal.classList.remove('mostrar');
+        }
+      });
+    }
+  }
+
+  const cadCurso = document.getElementById('cadCursos');
+  cadCurso.addEventListener('click', () => {
+    iniciaModal('#modal-cad-cursos');
+  });
+
+  const cadAluno = document.getElementById('cadAlunos');
+  cadAluno.addEventListener('click', () => {
+    iniciaModal('#modal-cad-aluno');
+  });
+
+</script>
+</html>

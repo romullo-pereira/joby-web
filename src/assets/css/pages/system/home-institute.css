@@ -1,0 +1,82 @@
+.box-cards-home .card {
+  width: 100%;
+  background-color: transparent;
+}
+
+.card {
+  background-image: none !important;
+}
+
+.one > div {
+  background-image: url('../../../img/fundo-cad-aluno.jpg');
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.four > div {
+  border-radius: 4px;
+  background-image: url('../../../img/fundo-cad-curso.jpg');
+  background-size: cover;
+}
+
+.icons-top-card {
+  background-color: #242424;
+}
+
+.create button {
+  background-color: var(--color-orange);
+  color: white;
+}
+
+.component-input textarea {
+  height: 100px;
+  min-height: 50px !important;
+}
+
+.icon-send {
+  background-color: #242424;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.icon-send button {
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-send button span {
+  font-size: 20px;
+  color: white;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.img-container {
+  background-color: #242424 !important;
+  color: white;
+  width: 40px;
+  height: 35px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imgPhoto {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.perfil-img {
+  background-image: url("../../../img/logo-bandtec.png");
+  background-size: cover;
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobY</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="glider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <link rel="stylesheet" href="../../assets/css/global/global.css">
+  <link rel="stylesheet" href="../../assets/css/global/reset.css">
+  <link rel="stylesheet" href="../../assets/css/global/iconMenu.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/system-page.css">
+  <link rel="stylesheet" href="../../assets/glide-3.4.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="../../assets/glide-3.4.1/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="../../assets/css/global/modal.css">
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+
+      <div class="box-logo">
+        <img src="../../assets/img/Logo - Fundo Escuro.png" alt="">
+      </div>
+
+      <ul class="box-item-menu">
+        <li><a href="../system/index.html" class="paragraph item-menu-active">Home</a></li>
+        <li><a href="../system/match-page.html" class="paragraph">Match</a></li>
+        <li><a href="../system/course-page.html" class="paragraph">Cursos</a></li>
+        <li><a href="../system/profile-page.html" class="paragraph">Curriculo</a></li>
+        <li><a href="../system/help-page.html" class="paragraph">Ajuda</a></li>
+      </ul>
+
+      <div class="box-profile">
+        <span class="material-icons-round icon-profile-menu">
+          notifications
+        </span>
+
+        <div class="pseudo"></div>
+
+        <span class="material-icons-round icon-profile-menu">
+          settings
+        </span>
+
+        <div class="pseudo"></div>
+
+        <img class="profile-menu">
+
+        <span class="material-icons-outlined icon-profile-menu" id="openSubMenu">
+          expand_more
+          <div class="subMenuProfile">
+            <ul>
+              <li><a href="../system/saved-places-page.html" class="paragraph"><span class="material-icons iconSub">favorite_border</span> Vagas favoritas</a></li>
+              <div class="pseudo"></div>
+              <li><a href="../system/course-page.html" class="paragraph"><span class="material-icons iconSub">school</span> Cursos favoritos</a></li>
+              <div class="pseudo"></div>
+              <li><a href="" class="paragraph" id="logout" onclick="logout()"><span class="material-icons iconSub">logout</span> Logout</a></li>
+            </ul>
+          </div>
+        </span>
+      </div>
+
+      <!-- <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div> -->
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="box-home">
+      <div class="box-title">
+        <h3 class="title-home">Olá <span class="span-title"></span>, bem vindo(a) de volta!</h3>
+        <p class="paragraph">Dê match com empresas cadastradas</p>
+      </div>
+
+      <div class="box-atach">
+        <h3 class="title-navigate">Navegue pela <span class="span-title sub-t">JobY</span></h3>
+        <div class="box-cards-home">
+          <div class="card one">
+            <div>
+              <div class="icon">
+                <div class="icons-top-card icon-card-one">
+                  <span class="material-icons-round icon-top-card">
+                    thumb_up
+                  </span>
+                </div>
+              </div>
+              <div class="home-title">
+                <p>Suas vagas salvas</p>
+                <a href="../system/saved-places-page.html">ir para Vagas Salvas <span class="material-icons-round">
+                    arrow_right_alt
+                  </span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card two">
+            <div>
+              <div class="icon">
+                <div class="icons-top-card icon-card-two">
+                  <span class="material-icons-round icon-top-card">
+                    reorder
+                  </span>
+                </div>
+              </div>
+              <div class="home-title">
+                <p>Veja seu curriculo</p>
+                <a href="../system/profile-page.html">ir para Meu curriculo <span class="material-icons-round">
+                    arrow_right_alt
+                  </span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card tree">
+            <div>
+              <div class="icon">
+                <div class="icons-top-card icon-card-tree">
+                  <span class="material-icons-round icon-top-card">
+                    school
+                  </span>
+                </div>
+              </div>
+              <div class="home-title">
+                <p>Veja cursos</p>
+                <a href="../system/course-page.html">Ir para Cursos <span class="material-icons-round">
+                    arrow_right_alt
+                  </span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card four">
+            <div>
+              <div class="icon">
+                <div class="icons-top-card icon-card-four">
+                  <span class="material-icons-round icon-top-card">
+                    favorite
+                  </span>
+                </div>
+              </div>
+              <div class="home-title">
+                <p>Dê matchs</p>
+                <a href="../system/match-page.html">Ir para Match
+                  <span class="material-icons-round">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-profile-home">
+        <h3 class="title-navigate">Informações</h3>
+
+        <div class="container-profile-infos">
+          <div class="box-profile">
+            <div class="box-img">
+              <div>
+                <img class="img-profile">
+                <div class="names-profile">
+                  <h3 class="name" id="nameStu"></h3>
+                  <p class="name s" id="email"></p>
+                </div>
+              </div>
+              <div class="icon-profile icon-discord">
+                <span>
+
+                </span>
+              </div>
+            </div>
+
+            <div class="pseudo"></div>
+
+            <div class="salvos">
+              <div class="title">
+                <h3>salvos</h3>
+              </div>
+              <div class="curtidas">
+                <div>
+                  <h3 id="countCurtidas">120</h3>
+                  <p>Vagas curtidas</p>
+                </div>
+                <!-- <div>
+                  <h3>120</h3>
+                  <p>Vagas curtidas</p>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="pseudo"></div>
+
+            <div class="instituicao">
+              <div class="title">
+                <h3>Instituição</h3>
+              </div>
+              <div class="institution-icon">
+                <div>
+                  <h3 id="name-institution">Etec de guaianases</h3>
+                  <p id="courseName">Analise e desenvolvimento de sistemas</p>
+                </div>
+
+                <div class="icon-profile-institution">
+                  <span class="material-icons-round">
+                    school
+                  </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="box-skills">
+            <div class="names-skills">
+              <h3>Skills</h3>
+              <div>
+                <p> <span class="material-icons-round">
+                    done
+                  </span> Designer</p>
+                <p> <span class="material-icons-round">
+                    done
+                  </span> Desenvolvedor</p>
+                <p> <span class="material-icons-round">
+                    done
+                  </span> Conversation</p>
+                <p> <span class="material-icons-round">
+                    done
+                  </span> Pacote office</p>
+              </div>
+            </div>
+
+            <div class="names-colors">
+              <h3>Cor tema curriculo</h3>
+              <div>
+                <div class="color-1" id="color1"></div>
+                <div class="color-1" id="color2"></div>
+                <div class="color-1" id="color3"></div>
+                <div class="color-1" id="color4"></div>
+                <div class="color-1" id="color5"></div>
+              </div>
+              <div>
+                <div class="color-1" id="color6"></div>
+                <div class="color-1" id="color7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-empresas">
+          <div class="title">
+            <h3 class="paragraph">Veja alguns logotipos das empresas que estão cadastradas em nossa plataforma! </h3>
+          </div>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+              </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span class="material-icons-round">
+                  arrow_back_ios
+                </span></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span class="material-icons-round">
+                  arrow_forward_ios
+                </span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <footer>
+      <div class="box-footer">
+        <p class="paragraph">© 2021 Joby</p>
+        <p class="paragraph">Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- --------------------- -->
+
+  <div id="modal-cad-aluno" class="modal-container">
+    <div class="modal">
+      <button class="close">x</button>
+      <h3>Cadastre seu discord</h3>
+      <form id="form-student-institute">
+        <div class="component-input">
+          <label for="#">ID Discord</label>
+          <div class="input">
+            <input type="text" placeholder="Joao#2062" class="input-cad" id="discId">
+            <div class="icon-input">
+              <span class="material-icons icon-input-form">
+                local_post_office
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-input">
+          <div class="buttons">
+            <button type="reset" class="cancel">Cancelar</button>
+          </div>
+          <div class="buttons create">
+            <button id="btnSend">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+<script src="../../assets/js/openSubMenu.js"></script>
+<script src="../../http/getInfos/curriculum/getInfos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="../../env.js"></script>
+<script src="../../http/getInfos/index/getInfo.js"></script>
+<script src="../../http/auth/validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.mjs"></script>
+<script src="../../assets/js/inputActive.js"></script>
+<script>
+  const buttonColors = document.querySelectorAll('.color-1');
+  Array.prototype.slice.call(buttonColors).map((buttonColor) => {
+    buttonColor.addEventListener('click', () => {
+      console.log(buttonColor.id);
+      Cookies.set('color1', `${buttonColor.id}`, { expires: 365 , path : '/'});
+      sessionStorage.setItem('color', `${buttonColor.id}`);
+    })
+  });
+</script>
+<script>
+  function iniciaModal(modalID) {
+    const modal = document.querySelector(modalID);
+    console.log(modalID);
+    console.log(modal)
+    if (modal) {
+      modal.classList.add('mostrar');
+      modal.addEventListener('click', (e) => {
+        if (e.target.id == modalID || e.target.className == 'close' || e.target.className == 'cancel') {
+          modal.classList.remove('mostrar');
+        }
+      });
+    }
+  }
+
+  const cadAluno = document.querySelector('.icon-discord');
+  cadAluno.addEventListener('click', () => {
+    iniciaModal('#modal-cad-aluno');
+  });
+</script>
+
+</html>

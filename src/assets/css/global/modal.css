@@ -1,0 +1,85 @@
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: var(--color-white);
+  width: 50%;
+  min-width: 800px;
+  padding: 40px;
+  background-color: var(--color-white);
+  border: solid 1px var(--color-gray-100);
+  border-radius: 4px;
+  flex-direction: column;
+  gap: 32px;
+  display: flex;
+  position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal {
+  animation: modal 0.3s;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.close {
+  border: none;
+  padding: 0;
+  background-color: rgb(255, 73, 73);
+  color: white;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.modal-container.mostrar {
+  display: flex;
+}
+
+.component-input .input:hover {
+  box-shadow: 0 0 0 2px var(--color-orange);
+  border-radius: 4px;
+}
+
+.input-hover-active {
+  box-shadow: 0 0 0 2px var(--color-orange);
+  border-radius: 4px;
+}
+
+.box-active {
+  background-color: var(--color-orange) !important;
+}
+
+.component-input .input:active {
+  box-shadow: 0 0 0 2px var(--color-orange);
+}

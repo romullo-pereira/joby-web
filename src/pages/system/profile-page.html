@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobY</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="glider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <link rel="stylesheet" href="../../assets/css/global/global.css">
+  <link rel="stylesheet" href="../../assets/css/global/reset.css">
+  <link rel="stylesheet" href="../../assets/css/global/iconMenu.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/system-page.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/course-page.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/curriculum-page.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/profile-page.css">
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+
+      <div class="box-logo">
+        <img src="../../assets/img/Logo - Fundo Escuro.png" alt="">
+      </div>
+
+      <ul class="box-item-menu">
+        <li><a href="../../pages/system/index.html" class="paragraph">Home</a></li>
+        <li><a href="../system/match-page.html" class="paragraph">Match</a></li>
+        <li><a href="../system/course-page.html" class="paragraph">Cursos</a></li>
+        <li><a href="../system/profile-page.html" class="paragraph item-menu-active">Curriculo</a></li>
+        <li><a href="../system/help-page.html" class="paragraph">Ajuda</a></li>
+      </ul>
+
+      <div class="box-profile">
+        <span class="material-icons-round icon-profile-menu">
+          notifications
+        </span>
+
+        <div class="pseudo"></div>
+
+        <span class="material-icons-round icon-profile-menu">
+          settings
+        </span>
+
+        <div class="pseudo"></div>
+
+        <img class="profile-menu">
+
+        <span class="material-icons-outlined icon-profile-menu" id="openSubMenu">
+          expand_more
+          <div class="subMenuProfile">
+            <ul>
+              <li><a href="" class="paragraph"><span class="material-icons iconSub">favorite_border</span> Vagas favoritas</a></li>
+              <div class="pseudo"></div>
+              <li><a href="" class="paragraph"><span class="material-icons iconSub">school</span> Cursos favoritos</a></li>
+              <div class="pseudo"></div>
+              <li><a href="" class="paragraph"><span class="material-icons iconSub">logout</span> Logout</a></li>
+            </ul>
+          </div>
+        </span>
+      </div>
+
+      <!-- <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div> -->
+
+    </nav>
+  </header>
+
+  <section class="container">
+    <div>
+      <div class="box-course">
+        <div class="box-title">
+          <h3 class="title">Curriculo</h3>
+          <p class="paragraph">Veja as informações do seu curriculo
+          </p>
+        </div>
+        <div class="box-curriculum">
+          <div class="box-profile">
+            <div class="card-profile">
+              <div class="color-profile">
+                <img class="img-container" id="img-container">
+                <input type="file" id="flImage" name="fImage" accept="image/*">
+              </div>
+              <div class="desc-profile">
+                <div class="box-title">
+                  <h3 class="title" id="name"></h3>
+                  <p class="paragraph" id="courseName"></p>
+                </div>
+                <div class="infos">
+                  <h3 class="title-sections">Informações</h3>
+                  <div class="p-infos">
+                    <p class="paragraph s" id="email"></p>
+                    <div class="pseudo"></div>
+                    <p class="paragraph s"><span id="city"></span>, <span id="uf"></span>, <span id="country"></span></p>
+                    <div class="pseudo"></div>
+                    <p class="paragraph s" id="birthDate"></p>
+                    <div class="pseudo"></div>
+                    <p class="paragraph s" id="phone"></p>
+                    <div class="pseudo"></div>
+
+                  </div>
+                  <h3 class="title-sections">Rede Sociais</h3>
+                  <div class="box-redes-sociais">
+                    <span class="material-icons icon-redes">
+                      facebook
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desc-curriculum">
+            <h3 class="title">Overview</h3>
+            <div class="component-input">
+              <div class="text-area">
+                <p class="paragraph" id="info-overview"></p>
+              </div>
+            </div>
+            <h3 class="title">Experiência</h3>
+
+            <div class="box-education">
+              <div>
+                <div class="desc-card">
+                  <p class="paragraph" id="role"></p>
+                </div>
+                <div class="title-card text-info">
+                  <p class="paragraph-desc desc-exp" id="company"></p>
+                  <p class="paragraph-desc desc-exp" id="location"></p>
+                </div>
+              </div>
+              <div class="date">
+                <p class="paragraph-desc" id="time"></p>
+              </div>
+            </div>
+
+            <div class="pseudo"></div>
+
+
+
+            <h3 class="title">Educação</h3>
+
+            <div class="box-education">
+              <div>
+                <div class="desc-card">
+                  <p class="paragraph" id="courseName"></p>
+                </div>
+                <div class="title-card text-info">
+                  <p class="paragraph-desc desc-exp" id="institute"></p>
+                </div>
+              </div>
+              <div class="date">
+                <p class="paragraph-desc">Abril 12. 2020 - Até o momento</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="box-footer">
+          <p class="paragraph">© 2021 Joby</p>
+          <p class="paragraph">Todos os direitos reservados</p>
+        </div>
+      </footer>
+  </section>
+
+
+
+</body>
+<script src="../../assets/js/openSubMenu.js"></script>
+<script src="../../env.js"></script>
+<script src="../../http/auth/validate.js"></script>
+<script src="../../http/getInfos/profile/getInfos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.mjs"></script>
+<script>
+</script>
+
+</html>

@@ -1,0 +1,60 @@
+.box-course {
+  padding: 0 0 40px;
+}
+
+.color-profile {
+  /* background-color: var(--color-pink) !important; */
+  border-radius: 4px;
+}
+
+#color1 {
+  background-color: #ff9b05 !important;
+}
+
+#color2 {
+  background-color: #006aff !important;
+}
+
+#color3 {
+  background-color: #ff2667 !important;
+}
+
+#color4 {
+  background-color: #004a51 !important;
+}
+
+#color5 {
+  background-color: #de5753 !important;
+}
+
+#color6 {
+  background-color: #add7f6 !important;
+}
+
+#color7 {
+  background-color: #242424 !important;
+}
+
+.img-container {
+  /* background-image: url('../../../img/profile.jpg'); */
+  background-size: cover;
+}
+
+.box-education > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.desc-exp {
+  text-transform: none;
+}
+
+.text-info {
+  display: flex;
+  gap: 16px;
+}
+
+.title-card {
+  display: flex;
+}

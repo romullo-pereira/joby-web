@@ -1,0 +1,133 @@
+.container {
+  width: calc(1366px - 300px);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.box-course {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.course {
+  display: flex;
+  gap: 32px;
+}
+
+.filter {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.types {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.type-course {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.type-course ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.type-course ul li {
+  cursor: pointer;
+  color: var(--color-gray-14);
+}
+
+.type-course ul li:hover {
+  color: var(--color-orange);
+}
+
+.type {
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #8e8e8e;
+}
+
+.type-card {
+  text-transform: none;
+  font-size: 12px;
+}
+
+.type-footer-card {
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: none;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+.box-two-cards {
+  display: flex;
+  gap: 32px;
+}
+
+.card {
+  width: 100%;
+  max-width: 385.45px;
+  height: 400px;
+  background-color: var(--color-white);
+  border: solid 1px var(--color-gray-100);
+  border-radius: 4px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.banner-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 16px;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.486)),
+    url('../../../img/capa-card-course.jpg');
+  background-size: cover;
+}
+
+.box-img-course {
+  width: 55px;
+  height: 55px;
+  background-image: url('../../../img/logo-etec.jpg');
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.box-title-card {
+  color: var(--color-white) !important;
+}
+
+.box-title-card > p {
+  color: var(--color-white);
+}
+
+.box-desc-card {
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.two-cards-course {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}

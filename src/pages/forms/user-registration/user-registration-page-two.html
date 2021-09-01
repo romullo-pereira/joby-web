@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/global/global.css">
+  <link rel="stylesheet" href="../../../assets/css/global/reset.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/forms/form-page.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/forms/responsive-forms/form-page-responsive.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/forms/user-registration-page.css">
+  <link rel="stylesheet" href="../../../assets/css/pages/forms/responsive-forms/user-registration-steps-responsive.css">
+</head>
+
+<body>
+  <section class="container">
+
+    <div class="box-img banner-registration">
+      <div class="box-desc-img">
+        <div class="box-logo">
+          <img src="../../../assets/img/Logo - Fundo Claro.png" alt="">
+        </div>
+        <!-- <div class="box-title">
+          <h3 class="title">Lorem ipsun</h3>
+        </div> -->
+        <div class="box-desc-login">
+          <p class="paragraph">Aqui na JobY entendemos que a busca por emprego não precisa ser algo chato, tornamos o processo mais interativo para você curtir a caminhada até o sonhado SIM!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-form box-form-step-1">
+
+      <div class="box-pais">
+        <div class="box-logo mob">
+          <img src="../../../assets/img/Logo - Fundo Escuro.png" alt="">
+        </div>
+        <h3 class="paragraph">Brasil</h3>
+      </div>
+
+      <div class="form form-step-1">
+        <form data-form>
+          <div class="box-steps">
+            <div class="progress">
+              <div class="progress-one p-step-one"></div>
+              <div class="progress-two"></div>
+            </div>
+            <div class="box-step box-one">
+              <h3>1</h3>
+            </div>
+            <div class="box-step box-two b-step-one">
+              <h3>2</h3>
+            </div>
+            <div class="box-step box-tree">
+              <h3>3</h3>
+            </div>
+          </div>
+
+
+          <div class="box-title">
+            <h3 class="title">Cadastro de Estudante</h3>
+          </div>
+
+          <div class="box-desc-login">
+            <p class="paragraph p-login">Informe seus dados pessoais, mas pode confiar, aqui na JobY segurança é um assunto sério!</p>
+          </div>
+
+          <div class="inputs">
+            <div class="component-input">
+              <label for="#">Email</label>
+              <div class="input">
+                <input type="email" placeholder="Insira seu email" data-email class="input-cad" required>
+                <div class="icon-input">
+                  <span class="material-icons icon-input-form">
+                    email
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group-input">
+
+              <div class="component-input">
+                <label for="#">Senha</label>
+                <div class="input">
+                  <input type="text" placeholder="Insira sua senha" data-password class="input-cad" required minlength="8">
+                  <div class="icon-input">
+                    <span class="material-icons icon-input-form">
+                      visibility
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="component-input">
+                <label for="#">Confirmar senha</label>
+                <div class="input">
+                  <input type="text" placeholder="Confirme sua senha" class="input-cad" required>
+                  <div class="icon-input">
+                    <span class="material-icons icon-input-form">
+                      visibility
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-input">
+              <label for="#">Nome completo</label>
+              <div class="input">
+                <input type="text" placeholder="Insira seu nome completo" data-name class="input-cad" required>
+                <div class="icon-input">
+                  <span class="material-icons icon-input-form">
+                    person
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="group-input">
+
+              <div class="component-input">
+                <label for="#">Data de nascimento</label>
+                <div class="input">
+                  <input type="date" placeholder="Insira sua senha" data-birth class="input-cad" required>
+                  <div class=" icon-input">
+                    <span class="material-icons icon-input-form">
+                      today
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="component-input">
+                <label for="#">Gênero</label>
+                <div class="select">
+                  <select data-gender name="" id="" required>
+                    <option selected disabled>Escolha seu gênero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Fêminino">Fêminino</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-input">
+              <label for="#">Estado Civil</label>
+              <div class="select">
+                <select data-matrialStatus name="" id="" required>
+                  <option selected disabled>Escolha estado civil</option>
+                  <option value="Casado">Casado(a)</option>
+                  <option value="Solteiro">Solteiro(a)</option>
+                  <option value="Viuvo">Viuvo(a)</option>
+                  <option value="Divorciado">Divorciado(a)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="group-input">
+
+              <div class="component-input">
+                <label for="#">Telefone fixo</label>
+                <div class="input">
+                  <input type="text" id="telefone" data-phone placeholder="Insira seu telefone fixo" class="input-cad">
+                  <div class="icon-input">
+                    <span class="material-icons icon-input-form">
+                      phone
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="component-input">
+                <label for="#">Telefone celular</label>
+                <div class="input">
+                  <input type="text" id="cell" data-cell placeholder="Insira seu telefone celular" class="input-cad" required>
+                  <div class="icon-input">
+                    <span class="material-icons icon-input-form">
+                      phone_iphone
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-input">
+              <div class="input-check">
+                <input type="checkbox" class="checkbox">
+                <label for="" class="paragraph">Pessoa com deficiência</label>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <button class="btn-user-registration">Cadastrar</button>
+            </div>
+
+            <div class="box-link-cad">
+              <p class="paragraph">Ja tem conta? <a href="../login/login-page.html" class="link">Ir para login</a></p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div class="box-footer">
+          <p class="paragraph">© 2021 Joby</p>
+          <p class="paragraph">Todos os direitos reservados</p>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $(document).ready(function(){
+		$("#telefone").mask('(00) 0000-0000');
+    $("#cell").mask('(00) 00000-0000');
+	});
+</script>
+<script src="../../../http/register/student/capturePersonData.js"></script>
+<script src="../../../assets/js/inputActive.js"></script>
+
+</html>

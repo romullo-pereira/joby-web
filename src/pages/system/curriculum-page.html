@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobY</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/global/global.css">
+  <link rel="stylesheet" href="../../assets/css/global/reset.css">
+  <link rel="stylesheet" href="../../assets/css/global/iconMenu.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/system-page.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/curriculum-page.css">
+</head>
+
+<body>
+  <section class="container">
+    <div class="box">
+      <div class="box-title">
+        <h3 class="title">Monte seu curriculo</h3>
+        <p class="paragraph">Essa etapa é muito importante, preencha direitinho e nos conte todas suas experiências!</p>
+      </div>
+    </div>
+
+    <div class="box-curriculum">
+      <div class="box-profile">
+        <div class="card-profile">
+          <div class="color-profile">
+            <div class="img-container">
+              <span class="material-icons icon-add" id="imgPhoto">
+                local_see
+              </span>
+            </div>
+            <input type="file" id="flImage" name="fImage" accept="image/*">
+          </div>
+          <div class="desc-profile">
+            <div class="box-title">
+              <h3 class="title" id="name"></h3>
+              <p class="paragraph">Análise e desenvolvimento de sistemas</p>
+            </div>
+            <div class="infos">
+              <h3 class="title-sections">Informações</h3>
+              <div class="p-infos">
+                <p class="paragraph s" id="email"></p>
+                <div class="pseudo"></div>
+                <p class="paragraph s"><span id="city"></span>, <span id="state"></span>, <span id="country"></span></p>
+                <div class="pseudo"></div>
+                <p class="paragraph s" id="birthDate">29/12/1998</p>
+                <div class="pseudo"></div>
+                <p class="paragraph s">11-94682-3157</p>
+                <div class="pseudo"></div>
+
+              </div>
+              <h3 class="title-sections">Rede Sociais</h3>
+              <div class="box-redes-sociais">
+                <span class="material-icons icon-redes">
+                  facebook
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desc-curriculum">
+        <h3 class="title">Overview</h3>
+        <div class="component-input">
+          <label for="#">Descrição</label>
+          <div class="text-area">
+            <textarea id="resume-overview" maxlength="430" placeholder="Conte sobre você!"></textarea>
+          </div>
+        </div>
+        <h3 class="title">Experiência</h3>
+        <div class="component-input">
+          <label for="#">Informe o cargo</label>
+          <div class="input">
+            <input type="text" id="role" placeholder="Junior Front End Developer" class="input-curriculo">
+          </div>
+        </div>
+
+        <div class="group-input">
+          <div class="component-input">
+            <label for="#">Informe a empresa</label>
+            <div class="input">
+              <input type="text" id="company" placeholder="Paygo" class="input-curriculo">
+            </div>
+          </div>
+          <div class="component-input">
+            <label for="#">Período</label>
+            <div class="input">
+              <input type="text" id="time" placeholder="Abril 12 2020 - Dezembro 25 2020" class="input-curriculo">
+            </div>
+          </div>
+        </div>
+
+        <div class="component-input">
+          <label for="#">Localização</label>
+          <div class="input">
+            <input type="text" id="location" placeholder="Guaianazes SP" class="input-curriculo">
+          </div>
+        </div>
+
+
+        <div class="pseudo"></div>
+
+        <div class="box-icon">
+          <div class="box-exp">
+            <span class="material-icons icon-add">
+              add
+            </span>
+          </div>
+        </div>
+
+        <h3 class="title">Educação</h3>
+
+        <div class="box-education">
+          <div>
+            <div class="desc-card">
+              <p class="paragraph">Analise e desenvolvimento de sistemas</p>
+            </div>
+            <div class="title-card">
+              <p class="paragraph-desc">Etec de guaianazes</p>
+            </div>
+          </div>
+          <div class="date">
+            <p class="paragraph-desc">Abril 12. 2020 - Até o momento</p>
+          </div>
+        </div>
+        <div class="group-input">
+          <div class="component-input">
+            <label for="#">Área de conhecimento</label>
+            <div class="input">
+              <select class="input-curriculo" name="" id="combo-knowledge">
+                <option value="">Escolha</option>
+              </select>
+            </div>
+          </div>
+          <div class="component-input">
+            <label for="#">Formação acadêmica</label>
+            <div class="input">
+              <select class="input-curriculo" name="" id="combo-academic">
+                <option value="">Escolha</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn-curriculum" id="btnPronto">Pronto</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="box-footer">
+        <p class="paragraph">© 2021 Joby</p>
+        <p class="paragraph">Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
+
+<script src="../../env.js"></script>
+<script src="../../http/getInfos/knowleageArea/getInfos.js"></script>
+<script src="../../http/getInfos/academicFormation/getInfos.js"></script>
+<script src="../../http/getInfos/curriculum/getInfos.js"></script>
+<script src="../../http/register/curriculum/createResume.js"></script>
+<script src="../../http/register/curriculum/postInfos.js"></script>
+<!-- <script src="../../http/auth/validate.js"></script> -->
+
+<script>
+  const btn = document.getElementById("btnPronto");
+
+  btn.addEventListener("click", () => {
+    createResume();
+  })
+</script>
+<script src="../../assets/js/imgPhoto.js"></script>

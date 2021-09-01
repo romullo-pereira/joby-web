@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .box-img {
+    display: none;
+  }
+
+  .container .box-form {
+    gap: 60px;
+    padding: 10px;
+  }
+
+  .container .box-form .form form {
+    padding: 0;
+  }
+
+  .box-logo {
+    width: 100%;
+    display: block;
+  }
+
+  .box-logo img {
+    width: 80px;
+  }
+
+  .container .box-img .box-desc-img {
+    padding: 24px;
+  }
+}

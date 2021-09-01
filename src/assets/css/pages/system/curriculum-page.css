@@ -1,0 +1,169 @@
+.container {
+  width: 100%;
+  max-width: calc(1366px - 300px);
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.info {
+  display: flex;
+  gap: 32px;
+}
+
+.box-curriculum {
+  display: flex;
+  gap: 32px;
+}
+
+.box-curriculum .box-profile .card-profile {
+  width: 310px;
+  height: 657px;
+  border-radius: 4px;
+  border: solid 1px var(--color-gray-100);
+  box-shadow: 4px 6px 4px 0 var(--color-gray-100);
+}
+
+.box-curriculum .desc-curriculum {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pseudo {
+  width: 100%;
+  height: 1px;
+  border: solid 1px var(--color-gray-100);
+}
+
+.box-icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-exp {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blue) !important;
+}
+
+.icon-add {
+  background-color: transparent !important;
+  color: var(--color-white) !important;
+}
+
+.box-education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-education div .title-card {
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-gray-14) !important;
+}
+
+.color-profile {
+  width: 100%;
+  height: 125px;
+  background-color: #d0d0d0 !important;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.color-profile {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  background-color: #d0d0d0 !important;
+  border: solid 3px var(--color-white);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 40%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imgPhoto {
+  width: 70px;
+  height: 70px;
+  font-size: 62.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-curriculum {
+  background-color: var(--color-blue) !important;
+  color: var(--color-white);
+  width: 190px;
+}
+
+.desc-profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 100px;
+}
+
+.desc-profile .box-title {
+  text-align: center;
+}
+
+.infos {
+  width: 100%;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.p-infos {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.box-redes-sociais {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-redes {
+  font-size: 24px;
+}
+
+.title-sections {
+  font-size: 14px;
+  color: var(--color-gray-14);
+}
+
+.s {
+  font-size: 300;
+}

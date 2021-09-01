@@ -1,0 +1,83 @@
+.container .img-type {
+  background: no-repeat url('../../img/banner-tipo-cadastro.jpg');
+  background-size: cover;
+}
+
+.box-cards-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.box-cards-type .box-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 32px;
+  border-radius: 4px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.box-cards-type .box-card:hover {
+  box-shadow: 0 0 0 2px var(--color-gray-74);
+  transition: all 0.2s;
+}
+
+.box-cards-type .studant {
+  background-color: var(--color-white);
+  border: solid 1px var(--color-gray-74);
+  color: var(--color-gray-14);
+}
+
+.box-cards-type .company {
+  background-color: var(--color-white);
+  border: solid 1px var(--color-gray-74);
+  color: var(--color-gray-14);
+}
+
+.box-cards-type .institution {
+  background-color: var(--color-white);
+  border: solid 1px var(--color-gray-74);
+  color: var(--color-gray-14);
+}
+
+.box-cards-type .box-card .box-img-card {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-cards-type .studant .box-img-card {
+  background-color: #f8becf;
+}
+
+.box-cards-type .company .box-img-card {
+  background-color: #a5bdfa;
+}
+
+.box-cards-type .institution .box-img-card {
+  background-color: #d6d6d6;
+}
+
+.m-icon-student {
+  color: var(--color-pink);
+}
+
+.m-icon-institution {
+  color: var(--color-dark-blue);
+}
+
+.m-icon-company {
+  color: var(--color-gray-14);
+}
+
+.box-logo {
+  width: 100%;
+}

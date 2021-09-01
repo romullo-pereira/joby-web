@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobY</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="glider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <link rel="stylesheet" href="../../assets/css/global/global.css">
+  <link rel="stylesheet" href="../../assets/css/global/reset.css">
+  <link rel="stylesheet" href="../../assets/css/global/iconMenu.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/system-page.css">
+  <link rel="stylesheet" href="../../assets/css/pages/system/match-page.css">
+  <link rel="stylesheet" href="../../assets/glide-3.4.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="../../assets/glide-3.4.1/dist/css/glide.theme.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+
+      <div class="box-logo">
+        <img src="../../assets/img/Logo - Fundo Escuro.png" alt="">
+      </div>
+
+      <ul class="box-item-menu">
+        <li><a href="../system/index.html" class="paragraph">Home</a></li>
+        <li><a href="../system/match-page.html" class="paragraph item-menu-active">Match</a></li>
+        <li><a href="../system/course-page.html" class="paragraph">Cursos</a></li>
+        <li><a href="../system/profile-page.html" class="paragraph">Curriculo</a></li>
+        <li><a href="../system/help-page.html" class="paragraph">Ajuda</a></li>
+      </ul>
+
+      <div class="box-profile">
+        <span class="material-icons-round icon-profile-menu">
+          notifications
+        </span>
+
+        <div class="pseudo"></div>
+
+        <span class="material-icons-round icon-profile-menu">
+          settings
+        </span>
+
+        <div class="pseudo"></div>
+
+        <img class="profile-menu">
+
+        <span class="material-icons-outlined icon-profile-menu" id="openSubMenu">
+          expand_more
+          <div class="subMenuProfile">
+            <ul>
+              <li><a href="../system/saved-places-page.html" class="paragraph"><span
+                    class="material-icons iconSub">favorite_border</span> Vagas favoritas</a></li>
+              <div class="pseudo"></div>
+              <li><a href="" class="paragraph"><span class="material-icons iconSub">school</span> Cursos favoritos</a>
+              </li>
+              <div class="pseudo"></div>
+              <li><a href="" class="paragraph"><span class="material-icons iconSub">logout</span> Logout</a></li>
+            </ul>
+          </div>
+        </span>
+      </div>
+
+      <!-- <div class="menu-icon">
+        <input class="menu-icon__cheeckbox" type="checkbox" />
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div> -->
+
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="box-home">
+      <div class="box-title">
+        <h3 class="title-home">Match</h3>
+        <p class="paragraph">Aqui você podera dar match com as empresas, experimente!</p>
+      </div>
+
+      <div class="box-atach">
+
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <!-- <li class="glide__slide">
+                <div class="blur">
+                  <div class="img-card">
+                    <div class="box-desc">
+                      <div>
+                        <div class="location">
+                          <p>Tech Company</p>
+                          <p>Jardins, SP</p>
+                        </div>
+                        <div class="title-match">
+                          <h3>Delloite</h3>
+                          <p>Product designer - UX team</p>
+                        </div>
+                        <div class="desc">
+                          <h3>Descrição da vaga:</h3>
+                          <p>it is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem. when looking at its layout. The
+                            point of using Lorem.</p>
+                        </div>
+                      </div>
+                      <div class="buttons">
+                        <button class="btn-ver-mais">Ver mais</button>
+                        <button class="btn-ver-menos" style="display: none">Ver menos</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span class="material-icons-round">
+                close
+              </span></button>
+            <button id="next" class="glide__arrow glide__arrow--right" data-glide-dir=">"><span
+                class="material-icons-round">
+                favorite
+              </span></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    </div>
+    <footer>
+      <div class="box-footer">
+        <p class="paragraph">© 2021 Joby</p>
+        <p class="paragraph">Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </section>
+
+
+
+</body>
+<script src="../../assets/js/openSubMenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="../../http/auth/validate.js"></script>
+<script src="../../env.js"></script>
+<script src="../../http/getInfos/match/getInfos.js"></script>
+
+</html>

@@ -1,0 +1,30 @@
+.container .banner-login {
+  background: no-repeat url('../../../img/Frame\ 7.png');
+  background-size: 500px 100%;
+}
+
+.component-input .input:hover {
+  box-shadow: 0 0 0 2px var(--color-orange);
+  border-radius: 4px;
+}
+
+.input-hover-active {
+  box-shadow: 0 0 0 2px var(--color-orange);
+  border-radius: 4px;
+}
+
+.box-active {
+  background-color: var(--color-orange) !important;
+}
+
+.component-input .input:active {
+  box-shadow: 0 0 0 2px var(--color-orange);
+}
+
+.btn-login {
+  background-color: var(--color-orange) !important;
+}
+
+.btn-login:hover {
+  background-color: #e78c03 !important;
+}

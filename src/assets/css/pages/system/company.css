@@ -1,0 +1,267 @@
+.modal-cad-vaga {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.card {
+  background-image: none !important;
+}
+
+.one > div {
+  background-image: none;
+  background-image: url('../../../img/banner-cad-vaga.jpg');
+}
+
+.box-info-user {
+  display: flex;
+  gap: 60px;
+}
+
+.offices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.offices .card-office {
+  width: 265px;
+  height: auto;
+  border: solid 1px #dddddd;
+}
+
+.offices .card-office > h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b8aaad;
+  margin: 16px 16px 0 16px;
+}
+
+.offices .card-office .infos-card-office {
+  border: none;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.offices .card-office .infos-card-office .icon-office span {
+  color: var(--color-orange);
+}
+
+.offices .card-office .infos-card-office .desc-office {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.offices .card-office .infos-card-office .desc-office p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+.offices .card-office .infos-card-office .desc-office h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #242424;
+}
+
+.pseudo-vertical {
+  height: 400px;
+  width: 1px;
+  background-color: #dddddd;
+}
+
+.users {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.users .cards-student-like {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.users .cards-student-like .card-student-like {
+  width: 320px;
+  height: auto;
+  border: solid 1px #dddddd;
+  border-radius: 4px;
+}
+
+.users .cards-student-like .card-student-like .info-student {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titles-infos {
+  font-size: 12px;
+  font-weight: 400;
+  color: #b8aaad;
+}
+
+.photo-name {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.photo-name .photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.photo-name .photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.photo-name .name-like {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.photo-name .name-like .like {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgba(154, 154, 154, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.photo-name .name-like span {
+  font-size: 30px;
+  color: #3d3d3d;
+  cursor: pointer;
+}
+
+.photo-name .name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.photo-name .name p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.photo-name .name h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #242424;
+}
+
+.matrialStatus {
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.matrialStatus .status {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.matrialStatus h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #242424;
+}
+
+.exp-student {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp-student .names-exp-company {
+  display: flex;
+  gap: 16px;
+}
+
+.exp-student .names-exp-company span {
+  color: var(--color-orange);
+}
+
+.exp-student .names-exp-company .names-func {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exp-student .names-exp-company .names-func h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #242424;
+}
+
+.name-job {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-job .status {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name-job .status h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #242424;
+}
+
+.name-job .icon-name-job {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #ffdca8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-job .icon-name-job span {
+  font-size: 16px;
+  color: #ff9b05;
+}
+
+.button-match {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+}
+
+.button-name-job {
+  background: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.perfil-img {
+  background-image: url("../../../img/belas-artes.png");
+  background-size: cover;
+}

@@ -1,0 +1,145 @@
+.glide {
+  width: 100% !important;
+}
+
+.glide__arrows {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.glide__arrow {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-white) !important;
+  border-radius: 100% !important;
+  border: none !important;
+  position: initial !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glide__arrow--left {
+  left: -3em !important;
+  color: var(--color-orange) !important;
+}
+
+.glide__arrow--right {
+  right: -3em !important;
+  color: var(--color-pink) !important;
+}
+
+.glide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  /* background-color: red; */
+}
+
+.glide__slide > div {
+  width: 320px;
+  height: 400px;
+  border-radius: 4px;
+  background-image: url('../../../img/pexels-paul-loh-233698.jpg');
+  background-size: cover;
+}
+
+/* .back1 {
+  background-image: url('../../../img/Group\ 34.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.glide__slide > div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.box-desc {
+  height: 50%;
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: rgba(0, 0, 0, 0.527);
+  color: white;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  display: none;
+}
+
+.desc h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.desc p {
+  font-size: 14px;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: #d0d0d0;
+}
+
+.box-desc-mais {
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.inative {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.box-desc > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location p {
+  color: #d0d0d0;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.title-match {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title-match p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.title-match h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.buttons button {
+  background-color: var(--color-orange);
+  color: white;
+}
+
+.buttons button:hover {
+  background-color: rgb(238, 127, 0);
+}
