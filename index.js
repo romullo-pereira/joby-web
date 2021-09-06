@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "src/pages", "start-page.html"));
 });
 
-app.use(express.static("src"));
+app.use(express.static("src/"));
 
 // start express server on port 5000
 app.listen(8080, () => {
